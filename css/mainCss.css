@@ -1,0 +1,53 @@
+body {
+    background-color: #c9cfcf;
+}
+
+.btn-li {
+    list-style: none;
+    text-align: center;
+}
+
+#reset {
+    background-image: url("/toDoList2023/icons/trash.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#srch {
+    background-image: url("/toDoList2023/icons/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#change {
+    background-image: url("/toDoList2023/icons/list.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.btn-li li {
+    display: inline-block;
+    margin-inline: 10%;
+    padding: 1px 1px 1px 1px;
+}
+
+.btn {
+    background-color: DodgerBlue;
+    /* Blue background */
+    border: none;
+    /* Remove borders */
+    color: white;
+    /* White text */
+    /* Some padding */
+    font-size: 16px;
+    /* Set a font size */
+    cursor: pointer;
+    /* Mouse pointer on hover */
+}
+
+
+/* Darker background on mouse-over */
+
+.btn:hover {
+    background-color: RoyalBlue;
+}
