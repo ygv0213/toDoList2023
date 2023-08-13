@@ -4,10 +4,22 @@ window.addEventListener('load', (e) => {
 
     clear.addEventListener('click', (event) => {
         let ol = document.getElementById("list");
-        let list = ol.getElementsByTagName("li");
+        let list;
+        let lifl = document.getElementById("lifl");
 
-        while (list.length > 0) {
-            ol.removeChild(list[0]);
+        if (!lifl.contains(ol)) {
+            ol = document.getElementById("listflex");
+            list = ol.getElementsByTagName("li");
+
+            while (list.length > 0) {
+                ol.removeChild(list[0]);
+            }
+        } else {
+            list = ol.getElementsByTagName("li");
+
+            while (list.length > 0) {
+                ol.removeChild(list[0]);
+            }
         }
     })
 });

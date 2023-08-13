@@ -6,8 +6,16 @@ window.addEventListener('load', (e) => {
     input.id = "inp";
 
     search.addEventListener('click', (event) => {
+        let lifl = document.getElementById("lifl");
         let ol = document.getElementById("list");
-        let li = ol.getElementsByTagName("li");
+        let li;
+
+        if (!lifl.contains(ol)) {
+            ol = document.getElementById("listflex");
+            li = ol.getElementsByTagName("li");
+        } else {
+            li = ol.getElementsByTagName("li");
+        }
 
         for (let i = 0; i < li.length; i++) {
             li[i].style.display = "block";
@@ -22,6 +30,12 @@ window.addEventListener('load', (e) => {
         }
 
         input.addEventListener('keyup', (event) => {
+            if (!lifl.contains(ol)) {
+                ol = document.getElementById("listflex");
+                li = ol.getElementsByTagName("li");
+            } else {
+                li = ol.getElementsByTagName("li");
+            }
             for (let i = 0; i < li.length; i++) {
                 if (!li[i].innerText.includes(input.value)) li[i].style.display = "none";
             }

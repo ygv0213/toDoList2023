@@ -27,15 +27,29 @@ window.addEventListener('load', (e) => {
 
             let li = document.createElement("li");
             let ol = document.getElementById("list");
+            let lifl = document.getElementById("lifl");
 
-            if (str != "") {
-                li.innerText = str;
-                li.className = "task";
+            if (lifl.contains(ol)) {
+                if (str != "") {
+                    li.innerText = str;
+                    li.className = "task";
 
-                ol.appendChild(li);
+                    ol.appendChild(li);
 
-                body.removeChild(ok);
-                body.appendChild(btn);
+                    body.removeChild(ok);
+                    body.appendChild(btn);
+                }
+            } else {
+                ol = document.getElementById("listflex");
+                if (str != "") {
+                    li.innerText = str;
+                    li.className = "task";
+
+                    ol.appendChild(li);
+
+                    body.removeChild(ok);
+                    body.appendChild(btn);
+                }
             }
 
         })

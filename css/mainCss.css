@@ -56,13 +56,6 @@ body {
     margin-inline: auto;
 }
 
-#list {
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
 .task {
     width: 20%;
     min-height: 40px;
@@ -141,4 +134,20 @@ body {
     font-weight: bold;
     padding: 5px;
     margin-block: 1%;
+}
+
+#list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#listflex {
+    display: block;
+    list-style-type: none;
+}
+
+#lifl {
+    list-style-type: none;
 }
