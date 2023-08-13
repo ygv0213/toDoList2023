@@ -1,53 +1,54 @@
+html,
 body {
     background-color: #c9cfcf;
+    margin: 0;
+    padding: 0;
 }
 
 .btn-li {
-    list-style: none;
-    text-align: center;
-}
-
-#reset {
-    background-image: url("/toDoList2023/icons/trash.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#srch {
-    background-image: url("/toDoList2023/icons/search.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-#change {
-    background-image: url("/toDoList2023/icons/list.png");
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.btn-li li {
-    display: inline-block;
-    margin-inline: 10%;
-    padding: 1px 1px 1px 1px;
+    width: 100%;
+    height: fit-content;
 }
 
 .btn {
-    background-color: DodgerBlue;
-    /* Blue background */
-    border: none;
-    /* Remove borders */
-    color: white;
-    /* White text */
-    /* Some padding */
-    font-size: 16px;
-    /* Set a font size */
-    cursor: pointer;
-    /* Mouse pointer on hover */
+    display: inline-flex;
+    height: 10%;
+    min-width: 33%;
+    border-radius: 0px 0 15px 15px;
 }
 
-
-/* Darker background on mouse-over */
-
 .btn:hover {
-    background-color: RoyalBlue;
+    background-color: rgb(61, 215, 215);
+}
+
+.btn:active {
+    background-color: rgb(40, 247, 247);
+}
+
+.img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-add {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    margin-left: 2%;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px 15px 15px 15px;
+}
+
+.btn-add:hover {
+    background-color: rgb(61, 215, 141);
+}
+
+.btn-add:active {
+    background-color: rgb(47, 190, 140);
+}
+
+#add {
+    margin-block: auto;
+    margin-inline: auto;
 }
