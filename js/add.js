@@ -28,13 +28,16 @@ window.addEventListener('load', (e) => {
             let li = document.createElement("li");
             let ol = document.getElementById("list");
 
-            li.innerText = str;
-            li.className = "task";
+            if (str != "") {
+                li.innerText = str;
+                li.className = "task";
 
-            ol.appendChild(li);
+                ol.appendChild(li);
 
-            body.removeChild(ok);
-            body.appendChild(btn);
+                body.removeChild(ok);
+                body.appendChild(btn);
+            }
+
         })
     })
 

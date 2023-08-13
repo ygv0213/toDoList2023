@@ -123,3 +123,22 @@ body {
     margin-left: 10px;
     font-size: large;
 }
+
+#inputsearch {
+    text-align: center;
+    border: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#inp {
+    font-size: large;
+    font-family: monospace;
+    word-wrap: break-word;
+    font-weight: bold;
+    padding: 5px;
+    margin-block: 1%;
+}
