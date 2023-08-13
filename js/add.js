@@ -3,6 +3,8 @@ window.addEventListener('load', (e) => {
     let add = document.getElementById("add");
     let body = document.getElementById("body");
 
+    let btn = document.getElementsByClassName("btn-add")[0];
+
     add.addEventListener('click', (event) => {
         let ok = document.createElement("div");
         let img = document.createElement("img");
@@ -10,14 +12,14 @@ window.addEventListener('load', (e) => {
 
         ok.className = "btn-ok";
         img.id = "ok";
-        img.src = src = "/toDoList2023/icons/ok.png";
+        img.src = src = "/icons/ok.png";
 
         text.id = "input";
 
         ok.appendChild(img);
         ok.appendChild(text);
         body.appendChild(ok);
-        body.removeChild(document.getElementsByClassName("btn-add")[0]);
+        body.removeChild(btn);
 
 
         img.addEventListener('click', (event) => {
@@ -30,6 +32,9 @@ window.addEventListener('load', (e) => {
             li.className = "task";
 
             ol.appendChild(li);
+
+            body.removeChild(ok);
+            body.appendChild(btn);
         })
     })
 
