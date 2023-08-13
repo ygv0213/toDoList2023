@@ -8,6 +8,9 @@ body {
 .btn-li {
     width: 100%;
     height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .btn {
@@ -51,4 +54,72 @@ body {
 #add {
     margin-block: auto;
     margin-inline: auto;
+}
+
+#list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task {
+    width: 20%;
+    min-height: 40px;
+    max-height: fit-content;
+    text-align: center;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    margin: 1%;
+    background-color: rgba(152, 250, 248, 0.807);
+    font-size: large;
+    font-family: monospace;
+    word-wrap: break-word;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.task:hover {
+    background-color: rgba(113, 196, 195, 0.807);
+}
+
+.task:active {
+    background-color: rgba(1, 255, 251, 0.807);
+}
+
+.btn-ok {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    margin-left: 2%;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 15px 15px 15px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+}
+
+.btn-ok:hover {
+    background-color: rgb(226, 88, 88);
+}
+
+.btn-ok:active {
+    background-color: rgb(227, 53, 53);
+}
+
+#ok {
+    margin-block: auto;
+    margin-inline: auto;
+}
+
+#input {
+    border: 0;
+    background-color: rgb(235, 183, 183);
+    height: 100%;
+    margin-left: 10px;
+    font-size: large;
 }
